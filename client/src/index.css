@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.promo{
+  background-image: url(./Resourse/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 680px;
+  position: relative;
+}
+
+.promo-panel{
+  width: 1100px;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 0px 5px 2px #c4c4c4;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 20px;
+}
+
+.panel-flex{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-flex input{
+  max-width: 400px;
+}
+
+.Register{
+  display: flex;
+  height: calc(100vh - 80px);
+  align-items: center;
+  justify-content: center;
+}
+
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+
+.panel{
+  display: flex;
+  align-items: center;
+}
+.panel span{
+  margin-right: 5px;
+  cursor: pointer;
+  
+}
+
+.avatar{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.main-avatar{
+  max-width: 250px;
+}
+
+.header-acaunt{
+  margin-top: 70px;
+  display: flex;
+}
+
+.info{
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.info h1{
+  font-size: 24px;
+  line-height: 0px;
+}
