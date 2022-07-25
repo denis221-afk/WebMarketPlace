@@ -4,9 +4,8 @@ const bodyParser = require('body-parser');
 const authRouter = require('./routes/auth');
 const sesion = require('express-session');
 const app = express();
-const PORT = 5000
+const PORT = 4000
 const url = "mongodb+srv://denys_mazuryk:den4ik17@cluster0.wtbbx.mongodb.net/?retryWrites=true&w=majority";
-const varMidleware = require('./midleware/variables')
 
 
 
@@ -18,7 +17,6 @@ app.use(sesion({
     resave: false,
     saveUninitialized: false
 }));
-app.use(varMidleware);
 app.use(authRouter);
 
 app.get('/avarar', (req, res) => {
@@ -27,7 +25,9 @@ app.get('/avarar', (req, res) => {
 
 async function start() {
     try{
-        await mongoose.connect(url, {useNewUrlParser:true})
+        await mongoose.connect(url, {
+            useNewUrlParser:true,
+        })
         app.listen(PORT, (Err) => {
             if(Err) throw Err
             

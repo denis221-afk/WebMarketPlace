@@ -10,7 +10,9 @@ const NavBar = ({user}) => {
                    <span uk-icon="sign-out"></span>
                    <span uk-icon="heart"></span>
                    <span uk-icon="bag"></span>
-                   <Link to={`/acaunt/${user._id}`} className='avatar'></Link>
+                   <Link to={`/acaunt/${user._id}`} className='avatar'>
+                        <img src={user.photoUrl} alt="" />
+                   </Link>
                 </div>
             </div>
         </div>
