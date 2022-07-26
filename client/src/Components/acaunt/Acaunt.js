@@ -22,7 +22,12 @@ const Acaunt = ({user}) => {
                     </div>
                 </div>
                 <div class="header__body">
-                    <div class="acaunt__nav"></div>
+                    <ul uk-tab={toString()}>
+                        <li class="uk-active"><a href="#">Інформація про Користувача</a></li>
+                        <li><a href="#">Паниль розробника</a></li>
+                        <li><a href="#">Портфоліо</a></li>
+                        <li><a href="#">Настройки</a></li>
+                    </ul>
                 </div>
             </div>
          
