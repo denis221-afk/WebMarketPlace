@@ -141,3 +141,9 @@ code {
   background-color: #c4c4c471;
   
 }
+.list-container{
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}

@@ -3,7 +3,7 @@ import CardItem from "../card-item/Card-item";
 
 const CardList = () => {
     return(
-        <div className="">
+        <div className="list-container">
             <CardItem />
             <CardItem />
             <CardItem />

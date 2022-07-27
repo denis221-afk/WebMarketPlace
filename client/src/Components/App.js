@@ -8,6 +8,7 @@ import Navbar from "./header/Nav-bar";
 import Main from "./Main/Main";
 import { Navigate } from "react-router-dom";
 import Acaunt from "./acaunt/Acaunt";
+import ItemPages from "./Main/item-page/Item-page";
 
 
 class App extends Component {
@@ -44,6 +45,7 @@ class App extends Component {
                         <Route path="/" element={<Main />} />
                         <Route path="/auth/login" element={<Navigate to="/" replace={false} />} />
                         <Route path="/acaunt/:acauntId" element={<Acaunt user={user}/>} />
+                        <Route path="/item/:itemid" element={<ItemPages />} />
                         <Route path="*" element={<Main />} />
                     </Routes>
                 </BrowserRouter>
@@ -58,6 +60,7 @@ class App extends Component {
                             <Route path="/" element={<Main />} />
                             <Route path="/auth/Register" element={<Register />} />
                             <Route path="/auth/login" element={<Login  onSesion={this.onSesion} getUser={this.getUser}/> } />
+                            <Route path="/item/:itemid" element={<ItemPages />} />
                             <Route path="*" element={<Main />} />
                         </Routes>
     
