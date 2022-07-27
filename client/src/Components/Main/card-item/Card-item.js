@@ -1,5 +1,8 @@
 import './item.scss';
 const CardItem = () => {
+
+
+
     return(
     <div className="catalog">
         <div className="container">
